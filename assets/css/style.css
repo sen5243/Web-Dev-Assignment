@@ -1,0 +1,358 @@
+/*Reset style */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.links-container,
+.dropdown,
+.social-media,
+.footer-links ul {
+    list-style-type: none;
+    z-index: 2;
+}
+
+.nav {
+    display: block;
+    min-height: 78px;
+    height: 100%;
+    user-select: none;
+}
+
+
+/*end of reset style*/
+
+nav.navbar-container {
+    position: absolute;
+    top: 0px;
+    background: #222;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: top 0.5s;
+}
+
+nav.navbar-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    width: 35px;
+    padding: 7.5px 15px 7.5px 0;
+    margin-left: 15px;
+    transition: all 0.5s;
+}
+
+a:hover img.logo {
+    transform: scale(1.2, 1.2);
+}
+
+.links {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.links:hover {
+    background-color: rgba(170, 181, 181, 0.8);
+}
+
+.links:hover a {
+    color: #222;
+    cursor: pointer;
+}
+
+
+/*Mobile nav-bar*/
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-container li a {
+    display: block;
+    padding: 20px 5px;
+    transition: all 0.5s;
+}
+
+.links-container li.option a {
+    padding: 15px;
+}
+
+.links-container li.option:hover {
+    background-color: rgba(208, 216, 216, 0.8);
+}
+
+.bar {
+    order: 1;
+}
+
+.cart {
+    order: 2;
+    text-align: center;
+}
+
+.cart img {
+    width: 30px;
+    transition: all 0.5s;
+}
+
+.cart a:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.links {
+    order: 4;
+    text-align: center;
+    display: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.active .links {
+    display: block;
+}
+
+
+/*Mobile options*/
+
+.dropdown {
+    /*hide dropdown options*/
+    display: none;
+}
+
+.dropdown-active .dropdown {
+    /*display dropdown options if active*/
+    display: block;
+}
+
+.with-dropdown>a::after {
+    /*add down icon beside links with dropdown*/
+    content: "";
+    background-image: url(../images/simple-down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 12px;
+    width: 10px;
+    display: inline-block;
+    position: relative;
+    left: 5px;
+}
+
+.dropdown a {
+    padding: 10px 15px;
+}
+
+.dropdown-active {
+    border-radius: 3px;
+}
+
+.dropdown-active .dropdown a {
+    color: black;
+    background-color: rgba(208, 216, 216, 0.8);
+}
+
+.dropdown-active .dropdown a:hover {
+    background-color: rgba(135, 194, 194, 0.8);
+}
+
+
+/*Splash intro hidden in mobile view*/
+
+.splash {
+    display: none;
+}
+
+
+/*end of spladrop intro */
+
+
+/*Mobile footer*/
+
+.footer-container {
+    background: rgb(184, 184, 184);
+    height: auto;
+    width: 100%;
+    padding: 40px 20px 20px 0px;
+    color: rgb(55, 54, 54);
+    z-index: -1;
+    overflow: auto;
+}
+
+.footer-paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-paragraph h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.footer-paragraph p {
+    max-width: 550px;
+    margin: 10px;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media li img {
+    width: 20px;
+}
+
+.social-media li img:hover {
+    width: 22px;
+}
+
+.copyright {
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.copyright p {
+    float: left;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.copyright p a {
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-links {
+    float: right;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links ul li {
+    padding: 10px;
+}
+
+.footer-links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+}
+
+div.chat-wrapper[opened="true"] {
+    height: 300px !important;
+    max-height: 50% !important;
+    min-height: 30% !important;
+}
+
+df-messenger {
+    --df-messenger-bot-message: #878fac;
+    --df-messenger-chat-background-color: #ffffffc4;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #878fac;
+    --df-messenger-user-message: #051340;
+}
+
+
+/* Desktop layout */
+
+@media all and (min-width: 680px) {
+    /*hide solid bar while in desktop mode */
+    .bar {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .links {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+        padding: 10px;
+    }
+    .dropdown-active .dropdown {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 77px;
+    }
+    .footer-links ul {
+        display: flex;
+    }
+    /*Splash intro activate in desktop view*/
+    .splash.active {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: url(../images/intro2.jpg) no-repeat left top;
+        background-size: cover;
+        color: white;
+        font-size: 2rem;
+        text-shadow: 2px 2px black;
+        z-index: 101;
+        opacity: 1;
+    }
+    .splash img {
+        width: 70px;
+        margin-bottom: 20px;
+    }
+    .splash.hidden {
+        /*add fade effect for hidden*/
+        opacity: 0;
+        transition: all 1s;
+        z-index: -99;
+    }
+    @keyframes intro {
+        /*intro animation*/
+        to {
+            opacity: 1;
+            font-size: 3rem;
+        }
+    }
+    .intro {
+        opacity: 0;
+        z-index: -99;
+        animation: intro 1s ease-in forwards;
+    }
+}

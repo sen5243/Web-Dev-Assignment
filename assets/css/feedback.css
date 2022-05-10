@@ -1,0 +1,91 @@
+.container {
+    padding-top: 30px;
+    margin: auto;
+    width: 50%;
+    min-height: 70vh;
+
+}
+
+.form-table {
+    padding: 10px 10px 10px 10px;
+    float: left;
+    overflow: auto;
+
+}
+
+.title {
+    font-size: 3vh;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.form-textbox {
+    width: fit-content;
+}
+
+.form-textbox input, textarea {
+    width: 30vw;
+    margin-top: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1.5px;
+    padding: 0px 15px 0px 15px;
+
+}
+
+.form-input{
+    float: left;
+    padding-right: 15px;
+}
+
+.form-label{
+    float: right;
+    width: 28vw;
+    padding-bottom: 20px;
+}
+
+.form-label a {
+    text-decoration: none;
+}
+
+.form-submit-button {
+    background: #0066A2;
+    color: white;
+    border-radius: 25px;
+    height: 35px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    position: static;
+    float: right;
+}
+
+.form-submit-button:hover {
+    background: #016ABC;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px #eee;
+    text-shadow: none;
+}
+
+
+.support-container {
+    height: fit-content;
+    max-width: fit-content;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: lightcyan;
+    border-color: lightgrey;
+
+    overflow: auto;
+    position: fixed;
+    right: 20%;
+}
+
+.support-content {
+    max-height: 15vh;
+    overflow: auto;
+    font-size: 1vw;
+}

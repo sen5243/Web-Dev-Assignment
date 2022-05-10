@@ -1,0 +1,455 @@
+body {
+    overflow-x: hidden;
+}
+
+@keyframes breathing {
+        25% {
+            opacity: 0.5;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    /*fade in animation*/
+    
+    @keyframes fromBottom {
+        from {
+            transform: translateY(150px);
+        }
+        to {
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes fromLeft {
+        from {
+            transform: translateX(-150px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+    
+    @keyframes fromRight {
+        from {
+            transform: translateX(150px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+    
+    @keyframes zoom {
+        from {
+            font-size: 0px;
+        }
+    }
+    
+    @keyframes shine {
+        0% {
+            opacity: 0;
+            transform: translateY(0);
+        }
+        10%,
+        90% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+    }
+  /*first session*/
+    .dark-body {
+        background: rgb(0, 0, 0);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 500px;
+    }
+    
+    .dark-body p {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        max-width: 800px;
+    }
+    
+    .dark-body img.dark-hero {
+        width: 45%;
+    }
+    
+    .dark-body i {
+        position: absolute;
+        background: #ffffff;
+        border-radius: 50%;
+        animation: shine linear infinite;
+    }
+    /*second session*/
+    .air-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px;
+        background: url(../images/black2.jpg);
+        background-size: cover;
+    }
+    
+    .air-container p {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        padding: 40px 0px 50px 0px;
+        text-align: center;
+        max-width: 800px;
+    }
+    
+    .air-container p#air {
+        text-shadow: 5px 5px 5px #ef629f;
+    }
+    
+    .air-container p#introduction {
+        max-width: 600px;
+        font-size: 40px;
+        background: linear-gradient(to bottom right, #eecda3, #ef629f);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+    
+    .air-container p#supercharge {
+        max-width: 600px;
+        font-size: 30px;
+        background: linear-gradient(to bottom right, #7e8bbb, #ef629f);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+    
+    img.new-air {
+        display: none;
+        width: 80%;
+        height: 272px;
+    }
+    
+    img.new-air-2 {
+        padding-top: 15px;
+        display: block;
+        width: 80%;
+    }
+    
+    .products-links {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .products-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding-left: 10px;
+    }
+    
+    .products-links ul li a {
+        font-size: 30px;
+        color: rgb(106, 177, 253);
+        text-decoration: none;
+    }
+    
+    .products-links ul li a#video::after {
+        content: " ";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-image: url(../images/blue-video.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding-left: 5px;
+    }
+    
+    .products-links ul li a:hover {
+        font-size: 32px;
+        text-decoration: underline;
+    }
+    
+    .parallax {
+        background-attachment: fixed;
+        background-position: center;
+    }
+    /*third session*/
+    .iphone13-intro {
+        background: linear-gradient(to top, rgb(173, 222, 255), rgb(255, 255, 255) 20%);
+        min-height: 300px;
+        color: #1d1d1f;
+        width: 100%;
+        padding-top: 40px;
+        text-align: center;
+    }
+    
+    .iphone13-intro h2#iphone13-header {
+        font-size: 40px;
+    }
+    
+    .iphone13-intro h3#iphone13-subheader {
+        font-size: 20px;
+        padding-top: 5px;
+        font-weight: 200;
+    }
+    
+    .iphone13-intro p#iphone13-text {
+        font-size: 15px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        color: rgb(100, 100, 100);
+    }
+    
+    img.iphone13-green {
+        margin-top: 0px;
+        width: 50%;
+    }
+    /*fourth session*/
+    
+    .iphone-se {
+        background: black;
+        min-height: 500px;
+        color: #ffffff;
+        width: 100%;
+        padding-top: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .iphone-se-intro {
+        flex-basis: 50%;
+    }
+    
+    .iphone-se-image-container {
+        flex-basis: 50%;
+    }
+    
+    h3#iphone-se-subheader {
+        padding: 5px 5px;
+    }
+    
+    p#iphone-se-text {
+        line-height: 2;
+    }
+    
+    img.iphone-se-logo {
+        width: 50%;
+    }
+    
+    img.iphone-se-phone {
+        width: 70%;
+        padding: 10px 10px;
+    }
+    
+    .products-links#iphone-se-links ul li a {
+        font-size: 20px;
+    }
+    
+    .products-links ul li a#video-se::after {
+        content: " ";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-image: url(../images/blue-video.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding-left: 5px;
+        vertical-align: bottom;
+    }
+    /*four boxes*/
+    .first-row,
+    .second-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-height: 200px;
+    }
+    
+    .first-row #first-box,
+    .first-row #second-box,
+    .second-row #third-box,
+    .second-row #fourth-box {
+        display: flex;
+        flex-basis: 50%;
+        border: 2px solid black;
+        border-radius: 5px;
+        min-height: 200px;
+        box-shadow: 2px 2px #1d1d1f;
+        background-size: cover;
+    }
+    
+    .first-row a,
+    .second-row a {
+        color: #000000;
+        font-size: 60px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 30px;
+        border: 5px solid black;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    
+    .first-row a:hover,
+    .second-row a:hover {
+        border: 0px solid black;
+    }
+    
+    .blur {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.3);
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        width: 100%;
+    }
+    
+    div#first-box {
+        background: url(../images/apple-products.jpg) no-repeat center;
+    }
+    
+    div#second-box {
+        background: url(../images/service.jpg) no-repeat center;
+    }
+    
+    div#third-box {
+        background: url(../images/about.jpg) no-repeat center;
+    }
+    
+    div#fourth-box {
+        background: url(../images/career.jpg) no-repeat center;
+    }
+    
+    div#first-box:hover,
+    div#second-box:hover,
+    div#third-box:hover,
+    div#fourth-box:hover {
+        background-size: 150%;
+    }
+    /* Desktop layout */
+    
+    @media all and (min-width: 680px) {
+    /*Splash intro activate in desktop view*/
+        .dark-body p {
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            padding: 0px 30px 50px 30px;
+            text-align: center;
+            max-width: 800px;
+        }
+        .dark-body img.dark-hero {
+            animation: breathing infinite 7s;
+            width: 50%;
+            position: relative;
+            top: 50px;
+        }
+        .air-container p {
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            max-width: 800px;
+        }
+        .air-container p#introduction {
+            max-width: 600px;
+            font-size: 80px;
+        }
+        .air-container p#supercharge {
+            max-width: 600px;
+            font-size: 70px;
+        }
+        img.new-air {
+            display: block;
+        }
+        img.new-air-2 {
+            display: none;
+        }
+        .iphone13-intro h2#iphone13-header {
+            font-size: 50px;
+        }
+        .iphone13-intro h3#iphone13-subheader {
+            font-size: 25px;
+            padding-top: 5px;
+        }
+        .iphone13-intro p#iphone13-text {
+            font-size: 20px;
+            padding-top: 5px;
+        }
+        .iphone-se {
+            flex-direction: row;
+        }
+        .first-row,
+        .second-row {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-height: 200px;
+        }
+        .first-row #first-box,
+        .first-row #second-box,
+        .second-row #third-box,
+        .second-row #fourth-box {
+            display: flex;
+            flex-basis: 50%;
+            border: 2px solid black;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+        }
+        .show {
+            opacity: 0;
+        }
+        .show.out {
+            opacity: 1;
+        }
+        .out.bottom {
+            animation: fromBottom 0.5s ease-in;
+        }
+        .out.left {
+            animation: fromLeft 0.5s ease-in;
+        }
+        .out.right {
+            animation: fromRight 0.5s ease-in;
+        }
+        .out.zoom p {
+            animation: zoom 1s ease-in;
+        }
+        img.iphone13-green.out.bottom {
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.1, 0.1, 0.3, 0.5);
+        }
+        .blur {
+            height: 100%;
+        }
+    }

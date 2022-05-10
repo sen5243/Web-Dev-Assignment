@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    background-color: #f5f5f7;
+    margin: auto;
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: auto;
+    animation: opacity 3s forwards;
+}
+
+.header div {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 210px;
+    z-index: 1;
+}
+
+.header div h2 {
+    font-size: 28px;
+    animation: mover 2s forwards;
+    margin-bottom: 12px;
+}
+
+.header div p {
+    font-size: 18px;
+    animation: opacity 1s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    margin-bottom: 5px;
+}
+
+.header div a {
+    font-size: 17px;
+    animation: opacity 1s forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    text-decoration: none;
+    color: #2179d1;
+}
+
+.header div a:hover {
+    text-decoration: underline;
+}
+
+.products {
+    width: 70%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.products h1 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.row-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-container-25,
+.column-container-33,
+.column-container-75 {
+    background-color: #f2f2f2;
+    margin: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+    height: 500px;
+}
+
+.column-container-25:hover,
+.column-container-33:hover,
+.column-container-75:hover {
+    transform: scale(1.05);
+}
+
+.column-container-25 {
+    flex: 25%;
+}
+
+.column-container-75 {
+    flex: 75%;
+}
+
+.column-container-33 {
+    flex: 33%;
+}
+
+.column-container-25 img {
+    width: 100%;
+    height: auto;
+}
+
+.column-container-75 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.column-container-33 img {
+    width: 100%;
+    height: auto;
+}
+
+.column-container-25 p,
+.column-container-33 p,
+.column-container-75 p {
+    font-size: 14px;
+    max-width: 70%;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes mover {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width:1000px) {
+    .row-container {
+        flex-direction: column;
+    }
+    .column-container-25,
+    .column-container-75,
+    .column-container-33 {
+        flex: 100%;
+        border-radius: 20px;
+    }
+    .column-container-25 img,
+    .column-container-75 img,
+    .column-container-33 img {
+        max-width: 500px;
+    }
+    .column-container-25 p,
+    .column-container-33 p,
+    .column-container-75 p {
+        font-size: 14px;
+        max-width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+.banner {
+    width: 100%;
+    background-color: #f5f5f7;
+    margin: auto;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: auto;
+    animation: opacity 3s forwards;
+}
+
+.banner div {
+    left:auto;
+}
+
+.banner div h2 {
+    font-size: 28px;
+    animation: mover 2s forwards;
+    margin-bottom: 12px;
+}
+
+.banner div p {
+    font-size: 18px;
+    animation: opacity 1s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    margin-bottom: 5px;
+}
+
+.banner div a {
+    font-size: 17px;
+    animation: opacity 1s forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    text-decoration: none;
+    color: #2179d1;
+}
+
+.banner div a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width:1200px) {
+    .header img {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:680px) {
+    .header div p {
+        width: 60%;
+        margin: auto;
+    }
+    .header img {
+        padding-top: 150px;
+    }
+}
+@media (max-width:1200px) {
+    .banner img {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:680px) {
+    .banner div p {
+        width: 60%;
+        margin: auto;
+    }
+    .banner img {
+        padding-top: 150px;
+    }
+}
+
+
+
+

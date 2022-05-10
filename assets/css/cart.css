@@ -1,0 +1,524 @@
+* {
+    scroll-behavior: smooth;
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(150px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(-150px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+div.cart-links {
+    height: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(45deg, #636bae, #004e92);
+    margin-bottom: 10px;
+}
+
+div.cart-links ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+div.cart-links ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.cart-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 40px 0px;
+}
+
+div.cart-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.products-header {
+    font-size: 40px;
+    width: 80%;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* products list */
+
+.products-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: ease-out fromLeft 0.5s;
+}
+
+
+/* product container */
+
+.products-container,
+.iphone-pro-container,
+.iphone-se-container,
+.ipad-air-container,
+.ipad-mini-container,
+.imac-24-container,
+.airpods-container,
+.tv-container,
+.watch-7-container,
+.watch-3-container,
+.watch-se-container,
+.accessories-container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.products-container .item-img img,
+.iphone-pro-container .item-img img,
+.iphone-se-container .item-img img,
+.airpods-container .item-img img,
+.watch-7-container .item-img img,
+.watch-3-container .item-img img,
+.watch-se-container .item-img img {
+    width: 200px;
+}
+
+.ipad-air-container .item-img img,
+.ipad-mini-container .item-img img,
+.imac-24-container .item-img img,
+.tv-container .item-img img,
+.accessories-container .item-img img {
+    width: 90%;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.item-container {
+    width: 250px;
+    min-height: 350px;
+    height: 100%;
+    position: relative;
+    background-color: #000;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.item-img {
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*description*/
+.desc {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+}
+/*add to cart button*/
+.add-to-cart {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgb(242, 255, 58); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-to-cart img {
+    width: 32px;
+    height: 32px;
+}
+/*tooltip*/
+.tooltip {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    padding: 5px;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-bottom: #000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    visibility: hidden;
+}
+
+.tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    /*set arrow to right*/
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+.add-to-cart:hover+.tooltip {
+    visibility: visible;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* cart */
+
+.cart-container {
+    height: 100%;
+    width: 40%;
+    position: sticky;
+    text-align: center;
+    top: 20px;
+    right: 20px;
+    animation: ease-out fromRight 0.5s;
+}
+
+
+/* shopping bag */
+
+.cart-bag img {
+    width: 30%;
+    background-color: rgb(234, 227, 217);
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 8px;
+    cursor: pointer;
+    max-width: 72.5px;
+}
+
+.cart-bag span {
+    font-size: small;
+    background-color: rgb(231, 88, 88);
+    border: 2px solid black;
+    border-radius: 50px;
+    color: #fff;
+    padding: 0px 4px;
+    text-align: center;
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+.cartItem-container {
+    display: none;
+}
+
+  /*cart show or hidden*/
+.showing {
+    display: block;
+}
+
+.hiding {
+    display: none;
+}
+
+
+/* cart header */
+
+.cart-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 0;
+}
+
+
+/* cart items */
+
+.cart-items {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+
+/* cart item */
+
+.cart-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-item div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item .item-info {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.cart-item .item-info:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.cart-item .item-info h4 {
+    font-size: 0.7rem;
+}
+
+.cart-item .item-info img {
+    width: 50px;
+}
+
+.cart-item .item-info::before {
+    content: "x";
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    background-color: rgb(252, 148, 130);
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    font-size: 10px;
+    text-align: center;
+    color: rgb(253, 250, 250);
+}
+
+.cart-item .unit-price {
+    flex: 1;
+    font-size: 1rem;
+}
+
+.cart-item .units {
+    flex: 1;
+}
+
+.cart-item .units .number {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.cart-item .units .btn {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(242, 255, 58);
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*cart footer*/
+.cart-footer {
+    width: 100%;
+}
+
+.cart-footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 1.3rem;
+}
+
+.cart-footer .subtotal {
+    background-color: rgb(255, 255, 255);
+}
+
+.cart-footer .checkout {
+    background-color: rgb(97, 97, 97);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.cart-footer .checkout:hover {
+    background-color: rgb(215, 215, 215);
+}
+
+.cart-footer .checkout p {
+    color: rgb(255, 255, 255);
+}
+
+.cart-footer .checkout:hover p {
+    color: rgb(0, 0, 0);
+}
+
+div.unit-price {
+    padding-right: 20px;
+}
+
+.show {
+    opacity: 0;
+}
+
+.show.out {
+    opacity: 1;
+}
+
+.out.left {
+    animation: fromLeft 0.5s ease-in;
+}
+
+.out.right {
+    animation: fromRight 0.5s ease-in;
+}
+
+@media all and (max-width: 900px) {/*slightly small screen*/
+    div.cart-links ul li {
+        display: inline-block;
+        flex: 30%;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    div.cart-links ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    div.cart-links ul li a {
+        padding: 0px;
+    }
+    .item-container {
+        width: 250px;
+    }
+    .watch-7-container .item-img img,
+    .watch-3-container .item-img img,
+    .watch-se-container .item-img img,
+    .accessories-container .item-img img {
+        width: 200px;
+    }
+    .products-header {
+        width: 80%;
+    }
+    .item-container {
+        min-width: 80%;
+    }
+    .cart-container {
+        top: 50px;
+        right: 5px;
+        width: 100%;
+    }
+    .cart-item .item-info img {
+        width: 40px;
+    }
+    .products-list {
+        width: 80%;
+    }
+    .cart-item .item-info::before {
+        content: "x";
+        width: 12px;
+        height: 12px;
+        min-width: 10px;
+    }
+    .cart-bag img {
+        width: 30%;
+    }
+    .cart-bag span {
+        left: 17px;
+        top: 10px;
+    }
+}
+
+@media all and (max-width: 650px) { /*mobile view*/
+    div.cart-links ul li {
+        display: inline-block;
+        flex: 30%;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    div.cart-links ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    div.cart-links ul li a {
+        padding: 0px;
+    }
+    .item-container {
+        min-width: 250px;
+    }
+    .products-container .item-img img,
+    .iphone-pro-container .item-img img,
+    .iphone-se-container .item-img img,
+    .airpods-container .item-img img,
+    .accessories-container .item-img img {
+        width: 150px;
+    }
+    .products-header {
+        width: 80%;
+    }
+    .item-container {
+        width: 80%;
+    }
+    .cart-container {
+        position: sticky;
+        width: 90%;
+    }
+    .cart-item .item-info img {
+        width: 30px;
+    }
+    .cart-item .item-info::before {
+        content: "x";
+        width: 15px;
+        height: 15px;
+    }
+    .tooltip {
+        top: 10px;
+        left: 60px;
+        padding: 5px;
+        width: 100px;
+    }
+    .tooltip::after {
+        top: 50%;
+        left: 100%;
+        /*set arrow to right*/
+        margin-top: -5px;
+        border-width: 5px;
+    }
+    .cart-bag img {
+        width: 50%;
+    }
+    .cart-bag span {
+        left: 17px;
+        top: 10px;
+        padding: 0px 3px;
+    }
+}

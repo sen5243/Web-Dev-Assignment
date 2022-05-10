@@ -1,0 +1,356 @@
+* {
+    margin: auto;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f7
+}
+
+/* buy button */
+.buy {
+    width: 5vw;
+    height: fit-content;
+    text-decoration: none;
+    background-color: #0071e3;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid #0071e3;
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.buy:hover {
+    color: black;
+    background-color: #e5e5f4;
+    border: 1px solid #0071e3;
+}
+
+.buy-2 {
+    width: 5vw;
+    height: fit-content;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.buy-2:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+/* the main flow in sequence */
+/* SECTION 1 */
+
+.section1 {
+    width: 100%;
+    position: relative;
+    background-color: #f5f5f7;
+}
+
+.section1-1 {
+    width: 100%;
+    margin: auto auto auto auto;
+    text-align: center;
+    position: inherit;
+}
+
+.section1-1 img {
+    margin: 4vh auto auto auto;
+}
+
+.slogan {
+    font-weight: bold;
+    font-size: 1.8vw;
+    margin-bottom: 2vh;
+}
+
+.price {
+    font-size: 1.2vw;
+    margin-bottom: 4vh;
+    font-weight: 600;
+}
+
+.watch-film a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.watch-film img{
+    width: 1%;
+}
+
+.section1-2 img{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+/* SECTION 2 */
+
+.section2 {
+    background-color: white;
+    margin: 2.5% auto auto auto;
+    width: 90%;
+    border-radius: 50px;
+    position: relative;
+    min-height: fit-content;
+}
+
+.section2-1 {
+    width: 50%;
+    margin: auto;
+    margin-right: 40px;
+    align-items: right;
+    text-align: right;
+    float: left;
+    min-height: 90vh;
+}
+
+.section2-1 img {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+.section2-2 {
+    margin: auto;
+    width: 100%;
+    display: inline;
+}
+
+.section2-2-1 {
+    padding: 130px 0px 20px 100px;
+}
+
+.section2-p1 {
+    font-size: 1.4vw;
+    font-weight: bold;
+    margin-bottom: 10vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section2-p2 {
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+
+.section2-2-2 {
+    padding-top: 25px;
+    height: 20vh;
+}
+
+
+/* Button for section 2 */
+
+.btn {
+    border-radius: 20px;
+    width: 8vw;
+    height: 7vh;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1vw;
+  }
+  
+  /* Style the active class, and buttons on mouse-over */
+  .active, .btn:hover {
+    background: black;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px #eee;
+    text-shadow: none;
+  }
+
+/* Continue */
+/* SECTION 3 */
+
+.section2A {
+    width: 100%;
+    background-color: white;
+    margin-top: 8vh;
+    padding-top: 2vh;
+}
+
+.section3 {
+    background-color: #f5f5f7;
+    margin: 2.5% auto auto auto;
+    width: 90%;
+    border-radius: 50px 50px 50px 50px;
+    position: relative;
+    min-height: 125vh;
+    padding: 150px 0 0 110px;
+}
+
+.section3-1 {
+    position: relative;
+    float: left;
+    width: 40%;
+    min-height: 50vh;
+    text-align: left;
+    vertical-align: center;
+    margin-right: 2.5vw;
+}
+
+.section3-p1 {
+    font-size: 2.4vw;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.section3-p2 {
+    margin-top: 5vh;
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+}
+
+.section3-2 img{
+    width: 45%;
+    position: inherit;
+    align-items: center;
+
+}
+
+/* SECTION 4 */
+.section3a-1 {
+    background-color: white;
+}
+.section3a {
+    background-color: white;
+    width: 90%;
+    padding-bottom: 10px;
+    border-radius: 0 0 50px 50px;
+    position: relative;
+    padding-top: 0.1em;
+}
+
+.section4 {
+    width: 70%;
+    margin: 80px;
+    text-align: center;
+    margin: 25px auto 80px auto;
+}
+
+.section4 .section4-heading {
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* CSS for comparison */
+
+.flex-table {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-table .flex-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    flex: 35%;
+}
+
+.flex-table .flex-container .row {
+    flex: 50%;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-table .flex-container .row h3 {
+    margin-bottom: 20px;
+}
+
+.flex-table .flex-container .row hr {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.flex-table .flex-container .row .imgcol {
+    margin: 30px;
+}
+
+.flex-table .flex-container .row .imgcol img {
+    width: auto;
+    height: 150px;
+}
+
+.flex-table .flex-container .row .col {
+    height: 200px;
+    vertical-align: bottom;
+}
+
+.flex-table .flex-container .row .col h2 {
+    font-size: 15px;
+}
+
+.flex-table .flex-container .row .col p {
+    font-size: 13px;
+}
+
+.flex-table .flex-container .row .col img {
+    margin: 10px
+}
+
+/* Flex */
+@media only screen and (max-width: 720px) {
+    .section1 {
+        flex-direction: column;
+    }
+    .section2 {
+        flex-direction: column;
+    }
+    .section3 {
+        flex-direction: column;
+    }
+    .section4 {
+        flex-direction: column;
+    }
+    .flex-table .flex-container {
+        flex-direction: column;
+    }
+}
+
+/* Animation */
+.image1 {
+    width: clamp(400px, 60%, 650px);
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .image1-animation {
+        animation: rotation 30s infinite linear;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

@@ -1,0 +1,276 @@
+.nav {
+  background-color: black;
+}
+
+.contact-body {
+    background-color: white;
+    position: relative;
+    font-size: 17px;
+}
+
+.contact-headcontainer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.heading {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    padding-top: 90px;
+    padding-bottom: 97px;
+    height: 250px;
+    min-width: 550px;
+}
+
+.heading h1 {
+    font-size: 55px;
+}
+
+.details-container {
+    width: 100%;
+}
+
+.details-content {
+    width: 80%;
+    min-width: 580px;
+    margin: auto;
+}
+
+.details-heading {
+    text-align: left;
+    margin: auto;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.details-heading h2 {
+    font-size: 32px;
+}
+
+.row a:link,
+.row a:visited {
+    color: rgb(47, 139, 237);
+    text-decoration: none;
+}
+
+.row a:hover,
+.row a:active {
+    color: rgb(47, 139, 237);
+    text-decoration: underline;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    border-style: none none groove none;
+}
+
+.col {
+    text-align: left;
+    flex: 50%;
+    padding-right: 12%;
+    padding-left: 3%;
+}
+
+.row h3 {
+    font-size: 20px;
+}
+
+p.col-first {
+    margin-top: -18px;
+}
+
+p.col-last {
+    margin-bottom: 30px;
+}
+
+.row p {
+    padding-top: 30px;
+}
+
+#before-line {
+    margin-bottom: 40px;
+}
+
+.help-links {
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+#ways-help {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#eligible-support {
+    padding-top: 38px;
+}
+
+.legal h3 {
+    padding-top: 30px;
+}
+
+.legal p {
+    padding-bottom: 40px;
+}
+
+.corporate-container {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.corporate-container a:link,
+.corporate-container a:visited {
+    color: rgb(47, 139, 237);
+    text-decoration: none;
+}
+
+.corporate-container a:hover,
+.corporate-container a:active {
+    color: rgb(47, 139, 237);
+    text-decoration: underline;
+}
+
+.corporate-content {
+    width: 55%;
+    min-width: 580px;
+    margin: auto;
+
+}
+
+.corporate-heading {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-style: none none groove none;
+}
+
+#corp-heading {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#corp-address {
+    line-height: 1.6;
+}
+
+.info-container {
+    padding-left: 25px;
+    border-style: none none groove none;
+}
+
+#info-heading {
+    text-align: left;
+    font-size: 25px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    padding-left: 3%;
+}
+
+.frequent-info-grid-flow {
+    display: grid;
+    grid-auto-flow: row;
+    /*repeat(3, 1fr) means 3 columns, each taking up 1 (equal) fraction of the available space.*/
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-inner-container {
+    height: 270px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content-container {
+    max-width: 250px;
+}
+
+.sub-heading {
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+
+.feedback-grid-flow {
+    display: grid;
+    grid-auto-flow: row;
+    /*repeat(3, 1fr) means 3 columns, each taking up 1 (equal) fraction of the available space.*/
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 50px;
+}
+
+.feedback-content {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.feedback-content h3 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+
+.feedback-content p {
+    padding-bottom: 25px;
+}
+
+
+/*responsive media queries*/
+
+@media screen and (min-width: 600px) {
+    .details-heading {
+        padding-left: 3%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-body,
+    .footer-container {
+        min-width: 480px;
+    }
+    .heading {
+        margin: auto;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 90px;
+        height: 200px;
+        min-width: 350px;
+    }
+    .heading h1 {
+        font-size: 35px;
+    }
+    .details-content {
+        min-width: 480px;
+    }
+    .details-heading {
+        padding-left: 3%;
+    }
+    .details-heading h2 {
+        font-size: 27px;
+    }
+    .col {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .corporate-container {
+        padding-top: 10%;
+        padding-bottom: 13%;
+    }
+    .corporate-content {
+        min-width: 480px;
+    }
+    .info-container {
+        padding-left: 3%;
+    }
+    .info-inner-container {
+        height: 290px;
+        padding-left: 0%;
+    }
+    .content-container {
+        max-width: 250px;
+    }
+}
