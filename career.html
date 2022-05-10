@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Join Us</title>
+    <link rel="icon" href="assets/images/apple-fav.png" type="image/x-icon">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/career.css" rel="stylesheet" type="text/css" />
+    <script src="assets/javascript/function.js" defer></script>
+    <script src="assets/javascript/careerScroll.js" defer></script>
+    <!--Load javascript after the webpage finish loaded-->
+    <!--Chatbot js-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Live Chat" agent-id="d3c85f8a-0a7a-4c5e-bf08-0bd15ed128d8" chat-icon="assets/images/chat.png" wait-open="true" 
+ language-code="en"></df-messenger>
+</head>
+
+<body>
+    <div class="nav" style="background-color: black;">
+        <nav class="navbar-container">
+            <!--navigation bar-->
+            <ul class="links-container">
+                <li>
+                    <a href="index.html"><img class="logo" src="assets/images/while_apple_icon.png" alt="logo"></a>
+                </li>
+                <li class="links with-dropdown">
+                    <!--clickable menu-->
+                    <a tabindex="0">Products</a>
+
+                    <ul class="dropdown">
+                        <!--dropdown hidden when not hovered-->
+                        <li class="option"><a href="product/product.html">Products</a></li>
+                        <li class="option"><a href="product/mac.html">Mac</a></li>
+                        <li class="option"><a href="product/iphone.html">iPhone</a></li>
+                        <li class="option"><a href="product/ipad.html">iPad</a></li>
+                        <li class="option"><a href="product/airpod.html">AirPod</a></li>
+                        <li class="option"><a href="product/watches.html">Watches</a></li>
+                        <li class="option"><a href="product/tv.html">TV</a></li>
+                        <li class="option"><a href="product/accessories.html">Accessories</a></li>
+                        <li class="option"><a href="product/services.html">Services</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="links with-dropdown">
+                    <a tabindex="0">Support</a>
+
+                    <ul class="dropdown">
+                        <li class="option"><a href="support/support.html">Support</a></li>
+                        <li class="option"><a href="support/contact.html">Contact Us</a></li>
+                        <li class="option"><a href="support/faq.html">FAQ</a></li>
+                        <li class="option"><a href="support/feedback.html">Feedback</a></li>
+                        <li class="option"><a href="support/phone.html">Phone Numbers</a></li>
+                    </ul>
+                </li>
+
+                <li class="links"><a href="about.html">About Us</a></li>
+                <li class="links"><a href="career.html">Join Us</a></li>
+                <li class="bar">
+                    <a tabindex="0"><img id="solid-bar" src="assets/images/fa-fa-bar.png" width="20px"></a>
+                </li>
+                <li class="cart">
+                    <a href="cart/cart.html"><img src="assets/images/white-cart.jpg" alt="cart"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="career-body-container">
+        <section class="intro_videoContainer">
+            <video autoplay loop muted id="video1">
+            <source src="assets\images\Apple_Loop_1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        </section>
+
+        <section class="video1_text">
+            <h1>Join us. Be you.</h1>
+            <span><a href="assets\images\Apple_Loop_1.mp4">&nbsp&nbsp&nbsp&nbsp&nbspWatch the film</a></span>
+        </section>
+
+        <section class="after_video1_textContainer ">
+            <img src="assets\images\creative.jpg">
+            <p>
+                This is where individual imaginations gather together, committing to the values that lead to great work. Here, you'll do more than join something - you'll add something.
+            </p>
+        </section>
+
+        <section class="after_video1_text2Container">
+            <div class="content-container">
+                <div class="inner-container-workAtApple">
+                    <h2 class="work show">Work at Apple</h2>
+                    <p class="joinTeam showleft">Join a team and inspire the work.</p>
+                    <P class="discover show">Discover how you can make an impact: see our areas of work, worldwide locations and opportunities for students.</br>
+                        </br>
+                        <a href="https://www.apple.com/careers/my/work-at-apple.html">Learn More</a>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ways-textContainer">
+            <div class="ways-text">
+                <p>
+                    Just a few of the ways you can </br><span id="difference">make a difference</span> at Apple
+                </p>
+            </div>
+        </section>
+
+
+        <section class="ways-infoContainer">
+            <div class="ways-infoContainer-left show">
+                <div class="box1">
+                    <img src="assets\images\SoftwareAndServices.png" alt="SoftwareAndServices" class="img1">
+                </div>
+
+                <div class="box2">
+                    <a href="https://www.apple.com/careers/my/teams/software-and-services.html">Software and Services</a>
+                </div>
+            </div>
+
+            <div class="ways-infoContainer-right showleft">
+                <div class="box1">
+                    <img src="assets\images\Hardware.png" alt="Hardware" class="img1">
+                </div>
+
+                <div class="box2">
+                    <a href="https://www.apple.com/careers/my/teams/hardware.html">Hardware</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="ways-infoContainer">
+            <div class="ways-infoContainer-left showleft">
+                <div class="box1">
+                    <img src="assets\images\MachineAndAI.png" alt="MachineAndAI" class="img1">
+                </div>
+
+                <div class="box2">
+                    <a href="https://www.apple.com/careers/my/teams/machine-learning-and-ai.html">Machine Learning and AI</a>
+                </div>
+            </div>
+
+            <div class="ways-infoContainer-right show">
+                <div class="box1">
+                    <img src="assets\images\SupportAndService.png" alt="SupportAndService" class="img1">
+                </div>
+
+                <div class="box2" id="lastbox2">
+                    <a href="https://www.apple.com/careers/my/teams/support-and-service.html">Support and Service</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-paragraph">
+            <h2>Apple Products</h2>
+            <p>
+                This website is used for study purpose only. For more and latest infomation, please refer to the Apple official website.
+            </p>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.apple.com/my/?cid=oas-japac-domains-apple.my/"><img src="assets/images/black_apple_icon.png" alt="official"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/apple/"><img src="assets/images/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/apple/"><img src="assets/images/instagram.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/apple"><img src="assets/images/twitter.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/Apple"><img src="assets/images/youtube.png" alt="youtube"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p><b>&copy;Apple Products 2022</b></p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product/product.html">Products</a></li>
+                <li><a href="support/support.html">Suppport</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cart/cart.html">Cart</a></li>
+                <li><a href="career.html">Join Us </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

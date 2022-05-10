@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Apple Products</title>
+    <link rel="icon" href="assets/images/apple-fav.png" type="image/x-icon">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
+    <script src="assets/javascript/splash.js" defer></script>
+    <script src="assets/javascript/function.js" defer></script>
+    <script src="assets/javascript/scroll.js" defer></script>
+    <script src="assets/javascript/star.js" defer></script>
+    <!-- Dialogflow Chatbot>-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Live Chat" agent-id="d3c85f8a-0a7a-4c5e-bf08-0bd15ed128d8" wait-open="true" chat-icon="assets/images/chat.png" language-code="en"></df-messenger>
+    <!--Load javascript after the webpage finish loaded-->
+</head>
+
+<body>
+    <div class="nav">
+        <nav class="navbar-container">
+            <!--navigation bar-->
+            <ul class="links-container">
+                <li>
+                    <a href="index.html"><img class="logo" src="assets/images/while_apple_icon.png" alt="logo"></a>
+                </li>
+                <li class="links with-dropdown">
+                    <!--clickable menu-->
+                    <a tabindex="0">Products</a>
+                    <!--adding tabindex instead of href = "#" to prevent the webpage refresh while clicking on the dropdown-->
+
+                    <ul class="dropdown">
+                        <!--dropdown hidden when not hovered-->
+                        <li class="option"><a href="product/product.html">Products</a></li>
+                        <li class="option"><a href="product/mac.html">Mac</a></li>
+                        <li class="option"><a href="product/iphone.html">iPhone</a></li>
+                        <li class="option"><a href="product/ipad.html">iPad</a></li>
+                        <li class="option"><a href="product/airpod.html">AirPod</a></li>
+                        <li class="option"><a href="product/watches.html">Watches</a></li>
+                        <li class="option"><a href="product/tv.html">TV</a></li>
+                        <li class="option"><a href="product/accessories.html">Accessories</a></li>
+                        <li class="option"><a href="product/services.html">Services</a></li>
+                    </ul>
+                </li>
+
+                <li class="links with-dropdown">
+                    <a tabindex="0">Support</a>
+                    <!--adding tabindex instead of href = "#" to prevent the webpage refresh while clicking on the dropdown-->
+
+                    <ul class="dropdown">
+                        <li class="option"><a href="support/support.html">Support</a></li>
+                        <li class="option"><a href="support/contact.html">Contact Us</a></li>
+                        <li class="option"><a href="support/faq.html" target="_blank">FAQ</a></li>
+                        <li class="option"><a href="support/feedback.html" target="_blank">Feedback</a></li>
+                        <li class="option"><a href="support/phone.html" target="_blank">Phone Numbers</a></li>
+                    </ul>
+                </li>
+
+                <li class="links"><a href="about.html">About Us</a></li>
+                <li class="links"><a href="career.html">Join Us</a></li>
+                <li class="bar">
+                    <a tabindex="0"><img id="solid-bar" src="assets/images/fa-fa-bar.png" width="20px"></a>
+                </li>
+                <li class="cart">
+                    <a href="cart/cart.html"><img src="assets/images/white-cart.jpg" alt="cart"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="splash">
+        <img class="intro image" src="assets/images/while_apple_icon.png">
+        <p class="intro">Think different</p>
+    </div>
+    <div class="dark-body parallax">
+        <img class="dark-hero breath" src="assets/images/apple-hero.png">
+
+        <p>Discover the innovative world of Apple and shop everything.</p>
+    </div>
+    <div class="air-container parallax">
+        <img class="new-air breath show bottom" src="assets/images/iPad_air-removebg.png">
+        <img class="new-air-2 breath show bottom" src="assets/images/iPad_air_vertical-removebg.png">
+        <p id="air" class="show left">Introducing the new iPad Air 5</p>
+        <div class="show zoom">
+            <p id="introduction">Light. Bright.<br> Full of might.</p>
+            <p id="supercharge">Available <br> starting from <br> 3.18</p>
+        </div>
+
+        <div class="products-links show left">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=I-t2mwrYc6s" id="video" target="blank">Intro Video</a></li>
+                <li><a href="https://www.apple.com/ipad-air/?cid=wwa-us-yt-shr-spring2022" target="blank">Learn More</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="iphone13 show bottom">
+        <div class="iphone13-intro">
+            <h2 id="iphone13-header">iPhone 13 Pro</h2>
+            <h3 id="iphone13-subheader">Now in Alpine Green.</h3>
+            <p id="iphone13-text">Pre-order in Alpine Green starting at 9 am MYT on 18 March</p>
+            <p id="iphone13-text">Available starting 25 March</p>
+            <div class="products-links">
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=kV__iZuxDGE" id="video" target="blank">Intro Video</a></li>
+                    <li><a href="https://www.apple.com/iphone/?cid=wwa-us-yt-shr-spring2022" target="blank">Learn More</a></li>
+
+                </ul>
+            </div>
+            <img src="assets/images/dual-iphone13.png" class="iphone13-green show bottom">
+        </div>
+    </div>
+    <div class="iphone-se show bottom">
+        <div class="iphone-se-intro show left">
+            <h2 id="iphone-se-header">The new</h2>
+            <img class="iphone-se-logo" src="assets/images/IPhone_SE_logo.png">
+            <h3 id="iphone-se-subheader">Love the power. Love the value.</h3>
+            <p id="iphone-se-text">Pre-order starting at 9 am MYT on 18 March</p>
+            <p id="iphone-se-text">Available starting 25 March</p>
+            <div class="products-links" id="iphone-se-links">
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=GByi_j-7Q2E" id="video-se">Intro Video</a></li>
+                    <li><a href="https://www.apple.com/iphone-se/?cid=wwa-us-yt-shr-spring2022">Learn More</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="iphone-se-image-container show right">
+            <img class="iphone-se-phone" src="assets/images/IPhone_SE.png">
+        </div>
+    </div>
+    <div class="categories">
+        <div class="first-row">
+            <div id="first-box" class="show left">
+                <div class="blur">
+                    <a href="product/product.html" class="category">Products</a>
+                </div>
+            </div>
+            <div id="second-box" class="show right">
+                <div class="blur">
+                    <a href="support/support.html">Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div id="third-box" class="show left">
+                <div class="blur">
+                    <a href="about.html">About Us</a>
+                </div>
+            </div>
+            <div id="fourth-box" class="show right">
+                <div class="blur">
+                    <a href="career.html">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-paragraph">
+            <h2>Apple Products</h2>
+            <p>
+                This website is used for study purpose only. For more and latest infomation, please refer to the Apple official website.
+            </p>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.apple.com/my/?cid=oas-japac-domains-apple.my/"><img src="assets/images/black_apple_icon.png" alt="official"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/apple/"><img src="assets/images/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/apple/"><img src="assets/images/instagram.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/apple"><img src="assets/images/twitter.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/Apple"><img src="assets/images/youtube.png" alt="youtube"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p><b>&copy;Apple Products 2022</b></p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product/product.html">Products</a></li>
+                <li><a href="support/support.html">Suppport</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cart/cart.html">Cart</a></li>
+                <li><a href="career.html">Join Us </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

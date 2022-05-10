@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About Us</title>
+    <link rel="icon" href="assets/images/apple-fav.png" type="image/x-icon">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/about.css" rel="stylesheet" type="text/css" />
+    <script src="assets/javascript/function.js" defer></script>
+    <!--Load javascript after the webpage finish loaded-->
+    <!--Chatbot js-->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Live Chat" agent-id="d3c85f8a-0a7a-4c5e-bf08-0bd15ed128d8" chat-icon="assets/images/chat.png" wait-open="true" 
+ language-code="en"></df-messenger>
+</head>
+
+<body>
+    <div class="nav">
+        <nav class="navbar-container">
+            <!--navigation bar-->
+            <ul class="links-container">
+                <li>
+                    <a href="index.html"><img class="logo" src="assets/images/while_apple_icon.png" alt="logo"></a>
+                </li>
+                <li class="links with-dropdown">
+                    <!--clickable menu-->
+                    <a tabindex="0">Products</a>
+
+                    <ul class="dropdown">
+                        <!--dropdown hidden when not hovered-->
+                        <li class="option"><a href="product/product.html">Products</a></li>
+                        <li class="option"><a href="product/mac.html">Mac</a></li>
+                        <li class="option"><a href="product/iphone.html">iPhone</a></li>
+                        <li class="option"><a href="product/ipad.html">iPad</a></li>
+                        <li class="option"><a href="product/airpod.html">AirPod</a></li>
+                        <li class="option"><a href="product/watches.html">Watches</a></li>
+                        <li class="option"><a href="product/tv.html">TV</a></li>
+                        <li class="option"><a href="product/accessories.html">Accessories</a></li>
+                        <li class="option"><a href="product/services.html">Services</a></li>
+                    </ul>
+                </li>
+
+                <li class="links with-dropdown">
+                    <a tabindex="0">Support</a>
+
+                    <ul class="dropdown">
+                        <li class="option"><a href="support/support.html">Support</a></li>
+                        <li class="option"><a href="support/contact.html">Contact Us</a></li>
+                        <li class="option"><a href="support/faq.html" target="_blank">FAQ</a></li>
+                        <li class="option"><a href="support/feedback.html" target="_blank">Feedback</a></li>
+                        <li class="option"><a href="support/phone.html" target="_blank">Phone Numbers</a></li>
+                    </ul>
+                </li>
+
+                <li class="links"><a href="about.html">About Us</a></li>
+                <li class="links"><a href="career.html">Join Us</a></li>
+                <li class="bar">
+                    <a tabindex="0"><img id="solid-bar" src="assets/images/fa-fa-bar.png" width="20px"></a>
+                </li>
+                <li class="cart">
+                    <a href="cart/cart.html"><img src="assets/images/white-cart.jpg" alt="cart"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="aboutUs-body-container">
+        <div class="ethics-container">
+            <div class="aboutUs-ethics">
+                <h1>Ethics and Compliance</h1><br/>
+                <p>Apple conducts business ethically, honestly, and in full compliance with the law. We believe that how we conduct ourselves is as critical to Apple’s success as making the best products in the world. Our Business Conduct and Compliance
+                    policies are foundational to how we do business and how we put our values into practice every day.</p><br/>
+                <p><q>We do the right thing, even when it’s not easy.</q></p><br/>
+                <span>Tim Cook</span>
+            </div>
+        </div>
+
+
+        <div class="aboutUs-infoContainer">
+            <div class="box1">
+                <h1>Our Business Conduct Policy</h1><br/>
+                <p>Honesty, Respect, Confidentiality and Compliance</p><br/>
+            </div>
+
+            <div class="box2">
+                <img src="assets/images/conductpolicypic.jpg" alt="Store" class="img1">
+            </div>
+
+            <div class="wrapper">
+                <div class="collapsible">
+                    <input type="checkbox" id="collapsible-head1">
+                    <label for="collapsible-head1">
+                        <p>
+                            Read More about Our Business Conduct Policy
+                            <img src="assets\images\plus-sign.png" class="collapsible-icon">
+                        </p>
+                    </label>
+                    <div class="collapsible-text">
+                        <p>Our <a href="https://www.apple.com/compliance/pdfs/Business-Conduct-Policy.pdf">Business Conduct Policy (PDF)</a> sets out our ethical requirements for our employees. Each of our employees must certify that they have read and understand
+                            the policy when they join Apple, and again each year. Violations of the policy are taken seriously and may result in disciplinary action, up to and including termination of employment. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutUs-infoContainer">
+            <div class="box1">
+                <h1>Compliance at Apple</h1>
+            </div>
+
+            <div class="box2">
+                <img src="assets\images\compliancepic.jpg" alt="Apple and Document Picture" class="img1">
+            </div>
+
+            <div class="wrapper">
+                <div class="collapsible">
+                    <input type="checkbox" id="collapsible-head2">
+                    <label for="collapsible-head2">
+                        <p>
+                            Read More about Compliance at Apple
+                            <img src="assets\images\plus-sign.png" class="collapsible-icon">
+                        </p>
+                    </label>
+                    <div class="collapsible-text">
+                        <p>A number of compliance functions are deeply integrated into our business organization. Apple’s Business Conduct and Global Compliance team focuses on Business Conduct, Political Compliance, Export and Sanctions Compliance, Health
+                            Compliance, Antitrust Compliance, and Anti-Corruption Compliance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutUs-infoContainer">
+            <div class="box1">
+                <h1>Bringing Policy to Life</h1>
+            </div>
+
+            <div class="box2">
+                <img src="assets\images\lifepic.png" alt="Laptop" class="img1">
+            </div>
+
+            <div class="wrapper">
+                <div class="collapsible">
+                    <input type="checkbox" id="collapsible-head3">
+                    <label for="collapsible-head3">
+                        <p>
+                            Read More about Bringing Policy to Life
+                            <img src="assets\images\plus-sign.png" class="collapsible-icon">
+                        </p>
+                    </label>
+                    <div class="collapsible-text">
+                        <p>Every Apple employee is required to complete mandatory annual Business Conduct training. We offer a range of additional resources for employees to address questions and concerns, including the Business Conduct Helpline and the
+                            Business Conduct website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutUs-infoContainer-last">
+            <div class="box1">
+                <h1>Being Accountable</h1>
+            </div>
+
+            <div class="box2">
+                <img src="assets\images\accountablepic.png" alt="Group of people" class="img1">
+            </div>
+
+            <div class="wrapper">
+                <div class="collapsible">
+                    <input type="checkbox" id="collapsible-head4">
+                    <label for="collapsible-head4">
+                        <p>
+                            Read More about Being Accountable
+                            <img src="assets\images\plus-sign.png" class="collapsible-icon">
+                        </p>
+                    </label>
+                    <div class="collapsible-text">
+                        <p>We conduct internal and third-party independent assessments of our programs to ensure they are effective. We make changes to our policies and our training to reflect emerging trends. Apple’s Chief Compliance Officer provides regular
+                            updates to the Audit and Finance Committee of the Board of Directors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-paragraph">
+            <h2>Apple Products</h2>
+            <p>
+                This website is used for study purpose only. For more and latest infomation, please refer to the Apple official website.
+            </p>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.apple.com/my/?cid=oas-japac-domains-apple.my/"><img src="assets/images/black_apple_icon.png" alt="official"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/apple/"><img src="assets/images/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/apple/"><img src="assets/images/instagram.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/apple"><img src="assets/images/twitter.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/Apple"><img src="assets/images/youtube.png" alt="youtube"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p><b>&copy;Apple Products 2022</b></p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product/product.html">Products</a></li>
+                <li><a href="support/support.html">Suppport</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cart/cart.html">Cart</a></li>
+                <li><a href="career.html">Join Us </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

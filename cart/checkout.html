@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Checkout</title>
+    <link rel="icon" href="../assets/images/apple-fav.png" type="image/x-icon">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/checkout.css" rel="stylesheet" type="text/css" />
+    <script src="../assets/javascript/function.js" defer></script>
+    <script src="../assets/javascript/checkout.js" defer></script>
+
+
+    <!--Load javascript after the webpage finish loaded-->
+    <!-- Dialogflow Chatbot>-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="appleBot" agent-id="d3c85f8a-0a7a-4c5e-bf08-0bd15ed128d8" chat-icon="../assets/images/chat.png" language-code="en"></df-messenger>
+</head>
+
+<body>
+    <div class="nav">
+        <nav class="navbar-container">
+            <!--navigation bar-->
+            <ul class="links-container">
+                <li>
+                    <a href="../index.html"><img class="logo" src="../assets/images/while_apple_icon.png" alt="logo"></a>
+                </li>
+                <li class="links with-dropdown">
+                    <!--clickable menu-->
+                    <a tabindex="0">Products</a>
+
+                    <ul class="dropdown">
+                        <!--dropdown hidden when not hovered-->
+                        <li class="option"><a href="../product/product.html">Products</a></li>
+                        <li class="option"><a href="../product/mac.html">Mac</a></li>
+                        <li class="option"><a href="../product/iphone.html">iPhone</a></li>
+                        <li class="option"><a href="../product/ipad.html">iPad</a></li>
+                        <li class="option"><a href="../product/airpod.html">AirPod</a></li>
+                        <li class="option"><a href="../product/watches.html">Watches</a></li>
+                        <li class="option"><a href="../product/tv.html">TV</a></li>
+                        <li class="option"><a href="../product/accessories.html">Accessories</a></li>
+                        <li class="option"><a href="../product/services.html">Services</a></li>
+                    </ul>
+                </li>
+
+                <li class="links with-dropdown">
+                    <a tabindex="0">Support</a>
+
+                    <ul class="dropdown">
+                        <li class="option"><a href="../support/support.html">Support</a></li>
+                        <li class="option"><a href="../support/contact.html">Contact Us</a></li>
+                        <li class="option"><a href="../support/find_store.html">Find a store</a></li>
+                        <li class="option"><a href="../support/faq.html" target="_blank">FAQ</a></li>
+                        <li class="option"><a href="../support/feedback.html" target="_blank">Feedback</a></li>
+                        <li class="option"><a href="../support/phone.html" target="_blank">Phone Numbers</a></li>
+                    </ul>
+                </li>
+
+                <li class="links"><a href="../about.html">About Us</a></li>
+                <li class="links"><a href="../career.html">Join Us</a></li>
+                <li class="bar">
+                    <a tabindex="0"><img id="solid-bar" src="../assets/images/fa-fa-bar.png" width="20px"></a>
+                </li>
+
+                <li class="cart">
+                    <a href="../cart/cart.html"><img src="../assets/images/white-cart.jpg" alt="cart"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="input-col">
+            <div class="form-container">
+                <form action="../index.html" id="checkout-form">
+
+                    <div class="row">
+                        <div class="ship-col page">
+                            <h3>Shipping Address</h3>
+                            <label for="fname">Full Name*</label>
+                            <input type="text" id="fname" name="firstname" placeholder="E.g. Teoh Yong Sen" required>
+                            <label for="email"></i> Email*</label>
+                            <input type="text" id="email" name="email" placeholder="E.g. teoh@example.com" required>
+                            <label for="adr">Address*</label>
+                            <input type="text" id="adr" name="address" placeholder="E.g. ABC Apartment Block C-1-2" required>
+                            <label for="city">City*</label>
+                            <input type="text" id="city" name="city" placeholder="E.g. Ipoh" required>
+
+                            <div class="row">
+                                <div class="full-col">
+                                    <label for="state">State*</label>
+                                    <select name="state" id="state" required>
+                                        <option value="perak">Perak</option>
+                                        <option value="johor">Johor</option>
+                                        <option value="kedah">Kedah</option>
+                                        <option value="kelantan">Kelantan</option>
+                                        <option value="melaka">Melaka</option>
+                                        <option value="sembilan">Negeri Sembilan</option>
+                                        <option value="pahang">Pahang</option>
+                                        <option value="penang">Penang</option>
+                                        <option value="selangor">Selangor</option>
+                                        <option value="terengganu">Terengganu</option>
+                                        <option value="perlis">Perlis</option>
+                                        <option value="sabah">Sabah</option>
+                                        <option value="sarawak">Sarawak</option>
+        
+                                      </select>
+                                </div>
+                                <div class="full-col">
+                                    <label for="pos">Postal Code*</label>
+                                    <input type="text" id="pos" name="pos" placeholder="E.g. 52300" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="payment-col page">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards*</label>
+                            <div class="icon-container">
+
+                                <label for="visa" class="radiobtn">
+                                    <input type="radio" id="visa" name="card" value="Visa" required>
+                                    <img src="../assets/images/visa.png" alt="visa">
+                                </label>
+                                <label for="mastercard" class="radiobtn">
+                                    <input type="radio" id="mastercard" name="card" value="MasterCard">
+                                    <img src="../assets/images/master-card.png" alt="mastercard">
+                                   
+                                 </label>
+                                <label for="citicard" class="radiobtn"> 
+                                    <input type="radio" id="citicard" name="card" value="Citicard">
+                                     <img src="../assets/images/citi.png" alt="citicard">
+                                
+                             </label>
+                                <label for="hsbc" class="radiobtn">
+                                <input type="radio" id="hsbc" name="card" value="Hsbc">
+                                 <img src="../assets/images/hsbc.png" alt="hsbc"> 
+                            </label>
+
+
+                            </div>
+                            <label for="cname">Name on Card*</label>
+                            <input type="text" id="cname" name="cardname" placeholder="E.g. Teoh Yong Sen" required>
+                            <label for="ccnum">Credit card number*</label>
+                            <input type="text" id="cnum" name="cardnumber" placeholder="E.g. 1234-5678-1357-2468" required>
+                            <label for="expdate">Expiry Date*</label>
+                            <input type="text" id="expdate" name="expdate" placeholder="E.g. MM/YY" required>
+                            <div class="row">
+                                <div class="full-col">
+                                    <label for="cvv">CVV*</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="E.g. 123" required>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" class="btn" id="prev" value="Previous Page" onclick="nextPrev(-1)"></input>
+                    <input type="button" class="btn" id="next" value="Next Page" onclick="nextPrev(1)"></input>
+                    <div style="text-align:center;margin-top:40px;">
+                        <span class="step"></span>
+                        <span class="step"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="cart-col">
+            <div class="cart-container">
+                <!--Whoe purchased items here>-->
+            </div>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-paragraph">
+            <h2>Apple Products</h2>
+            <p>
+                This website is used for study purpose only. For more and latest infomation, please refer to the Apple official website.
+            </p>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.apple.com/my/?cid=oas-japac-domains-apple.my/"><img src="../assets/images/black_apple_icon.png" alt="official"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/apple/"><img src="../assets/images/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/apple/"><img src="../assets/images/instagram.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/apple"><img src="../assets/images/twitter.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/Apple"><img src="../assets/images/youtube.png" alt="youtube"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p><b>&copy;Apple Products 2022</b></p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../product/product.html">Products</a></li>
+                <li><a href="../support/support.html">Suppport</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../cart/cart.html">Cart</a></li>
+                <li><a href="../career.html">Join Us </a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>FAQ</title>
+    <link rel="icon" href="../assets/images/apple-fav.png" type="image/x-icon">
+
+    <!-- navigation style and faq style -->
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/feedback.css" rel="stylesheet" type="text/css" />
+
+    <!-- javascript if neccessary-->
+    <script src="../assets/javascript/function.js" defer></script>
+    <script src="../assets/javascript/feedback.js" defer></script>
+    <!-- Dialogflow Chatbot>-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Live Chat" agent-id="d3c85f8a-0a7a-4c5e-bf08-0bd15ed128d8" chat-icon="../assets/images/chat.png" wait-open="true" 
+ language-code="en"></df-messenger>
+</head>
+<body>
+
+    <!-- navigation bar here -->
+    <div class="nav">
+        <nav class="navbar-container">
+            <!--navigation bar-->
+            <ul class="links-container">
+                <li>
+                    <a href="../index.html"><img class="logo" src="../assets/images/while_apple_icon.png" alt="logo"></a>
+                </li>
+                <li class="links with-dropdown">
+                    <!--clickable menu-->
+                    <a tabindex="0">Products</a>
+                    <!--adding tabindex instead of href = "#" to prevent the webpage refresh while clicking on the dropdown-->
+
+                    <ul class="dropdown">
+                        <!--dropdown hidden when not hovered-->
+                        <li class="option"><a href="../product/product.html">Products</a></li>
+                        <li class="option"><a href="../product/mac.html">Mac</a></li>
+                        <li class="option"><a href="../product/iphone.html">iPhone</a></li>
+                        <li class="option"><a href="../product/ipad.html">iPad</a></li>
+                        <li class="option"><a href="../product/airpod.html">AirPod</a></li>
+                        <li class="option"><a href="../product/watches.html">Watches</a></li>
+                        <li class="option"><a href="../product/tv.html">TV</a></li>
+                        <li class="option"><a href="../product/accessories.html">Accessories</a></li>
+                        <li class="option"><a href="../product/services.html">Services</a></li>
+                    </ul>
+                </li>
+
+                <li class="links with-dropdown">
+                    <a tabindex="0">Support</a>
+                    <!--adding tabindex instead of href = "#" to prevent the webpage refresh while clicking on the dropdown-->
+
+                    <ul class="dropdown">
+                        <li class="option"><a href="support.html">Support</a></li>
+                        <li class="option"><a href="contact.html">Contact Us</a></li>
+                        <li class="option"><a href="faq.html">FAQ</a></li>
+                        <li class="option"><a href="feedback.html">Feedback</a></li>
+                        <li class="option"><a href="phone.html">Phone Numbers</a></li>
+                    </ul>
+                </li>
+
+                <li class="links"><a href="../about.html">About Us</a></li>
+                <li class="links"><a href="../career.html">Join Us</a></li>
+                <li class="bar">
+                    <a tabindex="0"><img id="solid-bar" src="../assets/images/fa-fa-bar.png" width="20px"></a>
+                </li>
+                <li class="cart">
+                    <a href="../cart/cart.html"><img src="../assets/images/white-cart.jpg" alt="cart"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class=container>
+
+
+        <div class="form-table">
+            <h1 class="title">Feedback Form</h1>
+            <p><em>* indicates required field.</em></p><br>
+
+            <form action="feedback.html" onsubmit="message()">
+                <div class="form-textbox">
+                    <label for="customer_name">Customer Name: *</label><br>
+                    <input type="text" class="form-textbox-input" id="customer_name" name="customer_name" placeholder="E.g. Lee Chong Wei" maxlength="50" required>
+                </div><br>
+
+                <div class="form-textbox">
+                    <label for="customer_email">Email Address: *</label><br>
+                    <input type="email" class="form-textbox-input" id="customer_email" name="customer_email" placeholder="E.g. leecw@gmail.com" maxlength="50" required>
+                </div><br>
+                
+                <div class="form-textbox">
+                    <label for="subject">Subject: *</label><br>
+                    <input type="text" class="form-textbox-input" id="subject" placeholder="E.g. Damaged iPad" name="subject" required>
+                </div><br>
+
+                <div class="form-textbox">
+                    <label for="comment">Comment: *</label><br>
+                    <textarea name="comment" id="comment" placeholder="E.g. Detailed elaboration" maxlength="800" required style="min-height: 100px; resize: vertical;"></textarea>
+                </div><br>
+
+                <div class="form-checkbox">
+                    <div class="form-input">
+                        <input type="checkbox" class="form-checkbox-input" id="unsolicited_idea_submission_policy" name="unsolicited_idea_submission_policy" value="yes" required>
+                    </div>
+                    <div class="form-label">
+                        <label  for="unsolicited_idea_submission_policy">Please read <a href="https://www.apple.com/legal/intellectual-property/policies/ideas.html">Apple’s Unsolicited Idea Submission Policy</a> before you send us your feedback.</label>
+                    </div>
+                    
+
+                </div>
+                
+                <input type="submit" class="form-submit-button" value="Submit">
+            </form>
+
+        </div>
+
+
+
+        <div class="support-container">
+            <img class="support-content" src="../assets/images/feedback-pic.PNG" alt="Looking for support picture" style="padding-bottom: 20px;">
+            <h2 class="support-content" style="padding-bottom: 20px;">Looking for instant support?</h2>
+            <p class="support-content" style="padding-bottom: 20px;"><a href="contact.html" style="text-decoration: none;">Visit the Apple contact page</a>></p>
+        </div>
+
+
+    </div>
+
+
+
+    <footer class="footer-container">
+        <div class="footer-paragraph">
+            <h2>Apple Products</h2>
+            <p>
+                This website is used for study purpose only. For more and latest infomation, please refer to the Apple official website.
+            </p>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.apple.com/my/?cid=oas-japac-domains-apple.my/"><img src="../assets/images/black_apple_icon.png" alt="official"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/apple/"><img src="../assets/images/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/apple/"><img src="../assets/images/instagram.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/apple"><img src="../assets/images/twitter.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/Apple"><img src="../assets/images/youtube.png" alt="youtube"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p><b>&copy;Apple Products 2022</b></p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../product/product.html">Products</a></li>
+                <li><a href="../support/support.html">Suppport</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../cart/cart.html">Cart</a></li>
+                <li><a href="../career.html">Join Us </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

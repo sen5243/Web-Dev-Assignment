@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>FAQ</title>
+    <link rel="icon" href="../assets/images/apple-fav.png" type="image/x-icon">
+
+    <!-- navigation style and faq style -->
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/faq.css" rel="stylesheet" type="text/css" />
+
+    <!-- javascript if neccessary-->
+    <script src="../assets/javascript/function.js" defer></script>
+    <script src="../assets/javascript/faq.js" defer></script>
+    <!-- Dialogflow Chatbot>-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Live Chat" agent-id="d3c85f8a-0a7a-4c5e-bf08-0bd15ed128d8" chat-icon="../assets/images/chat.png" wait-open="true"  language-code="en"></df-messenger>
+</head>
+<body>
+
+    <!-- navigation bar here -->
+    <div class="nav">
+        <nav class="navbar-container">
+            <!--navigation bar-->
+            <ul class="links-container">
+                <li>
+                    <a href="../index.html"><img class="logo" src="../assets/images/while_apple_icon.png" alt="logo"></a>
+                </li>
+                <li class="links with-dropdown">
+                    <!--clickable menu-->
+                    <a tabindex="0">Products</a>
+                    <!--adding tabindex instead of href = "#" to prevent the webpage refresh while clicking on the dropdown-->
+
+                    <ul class="dropdown">
+                        <!--dropdown hidden when not hovered-->
+                        <li class="option"><a href="../product/product.html">Products</a></li>
+                        <li class="option"><a href="../product/mac.html">Mac</a></li>
+                        <li class="option"><a href="../product/iphone.html">iPhone</a></li>
+                        <li class="option"><a href="../product/ipad.html">iPad</a></li>
+                        <li class="option"><a href="../product/airpod.html">AirPod</a></li>
+                        <li class="option"><a href="../product/watches.html">Watches</a></li>
+                        <li class="option"><a href="../product/tv.html">TV</a></li>
+                        <li class="option"><a href="../product/accessories.html">Accessories</a></li>
+                        <li class="option"><a href="../product/services.html">Services</a></li>
+                    </ul>
+                </li>
+
+                <li class="links with-dropdown">
+                    <a tabindex="0">Support</a>
+                    <!--adding tabindex instead of href = "#" to prevent the webpage refresh while clicking on the dropdown-->
+
+                    <ul class="dropdown">
+                        <li class="option"><a href="support.html">Support</a></li>
+                        <li class="option"><a href="contact.html">Contact Us</a></li>
+                        <li class="option"><a href="faq.html">FAQ</a></li>
+                        <li class="option"><a href="feedback.html">Feedback</a></li>
+                        <li class="option"><a href="phone.html">Phone Numbers</a></li>
+                    </ul>
+                </li>
+
+                <li class="links"><a href="../about.html">About Us</a></li>
+                <li class="links"><a href="../career.html">Join Us</a></li>
+                <li class="bar">
+                    <a tabindex="0"><img id="solid-bar" src="../assets/images/fa-fa-bar.png" width="20px"></a>
+                </li>
+                <li class="cart">
+                    <a href="../cart/cart.html"><img src="../assets/images/white-cart.jpg" alt="cart"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- FAQ Article Here -->
+    <div id="faq-main">
+
+        <div class="faq-container">
+            
+            <h1>Frequently Asked Questions</h1>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Where can I purchase MainStage?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>MainStage is available through the <a href="https://itunes.apple.com/us/app/mainstage-3/id634159523?mt=12">Mac App Store.</a></p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What are the system requirements for MainStage?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>The minimum system requirements are the same as Logic Pro. See the <a href="http://www.apple.com/logic-pro/specs/">Logic Pro Tech Specs</a> for detailed information.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What's new in MainStage?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>View the <a href="http://support.apple.com/kb/TS4513">MainStage Release notes</a> for detailed information.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Is a trial version of MainStage available?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>There is no trial version of MainStage.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Is MainStage available as a download?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>MainStage is available for download on the <a href="http://itunes.apple.com/us/app/mainstage-3/id634159523?mt=12">Mac App Store</a>.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-6" aria-expanded="false"><span class="accordion-title">On how many computers can I install MainStage?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>View <a href="http://www.apple.com/legal/internet-services/itunes/us/terms.html#APPS">Mac App Store, App Store and iBooks Store Terms and Conditions </a> (“Usage Rules”) for detailed information.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-7" aria-expanded="false"><span class="accordion-title">How do I purchase a Volume License for MainStage?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>Locate the appropriate sales contact number for your organization at <a href="http://www.apple.com/contact/">http://www.apple.com/contact/</a>.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-8" aria-expanded="false"><span class="accordion-title">What documentation is available for MainStage?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>To access the MainStage User Manual online, visit <a href="http://help.apple.com/mainstage">http://help.apple.com/mainstage</a> or <a href="http://support.apple.com/manuals/#professionalsoftware">http://support.apple.com/manuals/#professionalsoftware</a>.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-9" aria-expanded="false"><span class="accordion-title">What audio interfaces not made by Apple ("third-party") are qualified for use with MainStage?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>Most audio interfaces that are compatible with Mac OS X v10.8.4 Mountain Lion or later will work with MainStage. If the device requires a driver to function in Mac OS X, make sure an up-to-date driver is included with the device or that one is available from the manufacturer.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-10" aria-expanded="false"><span class="accordion-title">What technical support options are available for MainStage?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>View <a href="http://www.apple.com/support/mainstage/">Mainstage Page</a> and <a href="http://www.apple.com/support/products/enterprise/video.html">Professional Video and Audio Support</a> for detailed information.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-11" aria-expanded="false"><span class="accordion-title">Where can I submit product feedback on MainStage?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>Click <a href="http://www.apple.com/feedback/">here</a>.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div id="faq-ending">
+            <p>
+                Information about products not manufactured by Apple, or independent websites not controlled or tested by Apple, is provided without recommendation or endorsement. Apple assumes no responsibility with regard to the selection, performance, or use of third-party websites or products. Apple makes no representations regarding third-party website accuracy or reliability.
+                <a href="http://support.apple.com/kb/HT2693">Contact the vendor</a>
+                for additional information.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-paragraph">
+            <h2>Apple Products</h2>
+            <p>
+                This website is used for study purpose only. For more and latest infomation, please refer to the Apple official website.
+            </p>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.apple.com/my/?cid=oas-japac-domains-apple.my/"><img src="../assets/images/black_apple_icon.png" alt="official"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/apple/"><img src="../assets/images/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/apple/"><img src="../assets/images/instagram.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/apple"><img src="../assets/images/twitter.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/Apple"><img src="../assets/images/youtube.png" alt="youtube"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p><b>&copy;Apple Products 2022</b></p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../product/product.html">Products</a></li>
+                <li><a href="../support/support.html">Suppport</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../cart/cart.html">Cart</a></li>
+                <li><a href="../career.html">Join Us </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
